@@ -35,7 +35,8 @@ jobs:
         uses: snyk/actions/python@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-          security-report:
+
+  security-report:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -51,4 +52,4 @@ jobs:
           sudo dpkg -i trivy_0.70.0_Linux-64bit.deb
 
       - name: Run security report
-        run: python security_report.py
+        run
