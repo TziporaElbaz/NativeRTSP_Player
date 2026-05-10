@@ -52,4 +52,4 @@ jobs:
           sudo dpkg -i trivy_0.70.0_Linux-64bit.deb
 
       - name: Run security report
-        run: python security_report.py
+        run:  python $GITHUB_WORKSPACE/security_report.py
