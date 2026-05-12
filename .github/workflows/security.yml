@@ -53,3 +53,8 @@ jobs:
 
       - name: Run security report
         run:  python $GITHUB_WORKSPACE/security_report.py
+- name: Debug - list files
+        run: ls -la
+
+      - name: Run security report
+        run: python security_report.py
