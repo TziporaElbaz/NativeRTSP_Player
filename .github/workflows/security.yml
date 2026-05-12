@@ -51,9 +51,7 @@ jobs:
           wget https://github.com/aquasecurity/trivy/releases/download/v0.70.0/trivy_0.70.0_Linux-64bit.deb
           sudo dpkg -i trivy_0.70.0_Linux-64bit.deb
 
-      - name: Run security report
-        run:  python $GITHUB_WORKSPACE/security_report.py
-- name: Debug - list files
+      - name: Debug - list files
         run: ls -la
 
       - name: Run security report
